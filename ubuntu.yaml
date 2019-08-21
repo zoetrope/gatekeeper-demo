@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: ubuntu
+  name: ubuntu
+  namespace: default
+spec:
+  containers:
+  - name: ubuntu
+    image: quay.io/cybozu/ubuntu-debug:18.04
+    command:
+    - sleep
+    - infinity
