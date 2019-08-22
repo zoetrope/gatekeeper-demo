@@ -1,6 +1,6 @@
 # Gatekeeper Demo
 
-## Required
+## Requirements
 * Docker
     * See [https://docs.docker.com/install/](https://docs.docker.com/install/)
 * kubectl
@@ -21,4 +21,9 @@ $ export KUBECONFIG="$(kind get kubeconfig-path --name="gatekeeper-demo")"
 $ kubectl apply -f https://raw.githubusercontent.com/open-policy-agent/gatekeeper/master/deploy/gatekeeper.yaml
 ```
 
-## 
+## Create a Constraint
+
+```console
+$ kubectl apply -f template.yaml
+$ kubectl apply -f constraint.yaml
+```
